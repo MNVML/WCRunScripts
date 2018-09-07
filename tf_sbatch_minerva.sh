@@ -8,7 +8,7 @@ sbatch --gres=gpu:${NGPU} --nodelist=${NODES} -A minervag -p gpu job${SCRIPTKEY}
 EOF
 
 # do the thing, etc.
-cp mnvexe.sh job${SCRIPTKEY}
+cp tf_exe.sh job${SCRIPTKEY}
 pushd job${SCRIPTKEY}
-sbatch --gres=gpu:${NGPU} --nodelist=${NODES} -A minervag -p gpu mnvexe.sh
+sbatch --gres=gpu:${NGPU} --nodelist=${NODES} -A minervag -p gpu tf_exe.sh
 popd
