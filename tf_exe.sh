@@ -11,9 +11,9 @@ TRAIN_STEPS=5
 NUM_EPOCHS=1
 
 MODEL_DIR="/data/perdue/minerva/tensorflow/models/test"
-DATA_DIR="/data/perdue/minerva/hdf5/test"
-TRAIN_FILE="${DATA_DIR}/hadmultkineimgs_mnvvtx_train.hdf5"
-EVAL_FILE="${DATA_DIR}/hadmultkineimgs_mnvvtx_test.hdf5"
+DATA_DIR="/data/perdue/minerva/hdf5/201804"
+TRAIN_FILE="${DATA_DIR}/hadmultkineimgs_127x94_me1Nmc.hdf5"
+EVAL_FILE="${DATA_DIR}/hadmultkineimgs_127x94_me1Omc.hdf5"
 
 ARGS="--batch-size ${BATCH_SIZE}"
 # ARGS+=" --train-steps ${TRAIN_STEPS}"
