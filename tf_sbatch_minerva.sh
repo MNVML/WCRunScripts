@@ -4,7 +4,7 @@ SCRIPTKEY=`date +%s`
 mkdir job${SCRIPTKEY}
 
 cat << EOF
-sbatch --gres=gpu:${NGPU} --nodelist=${NODES} -A minervag -p gpu job${SCRIPTKEY}.sh
+sbatch --gres=gpu:${NGPU} --nodelist=${NODES} -A minervag -p gpu tf_exe.sh
 EOF
 
 # do the thing, etc.
